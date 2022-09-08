@@ -28,8 +28,8 @@ public abstract class Database {
 	Database() throws SQLException {
 		// connection creates a connection to the poisedpms database and statement, uses
 		// connection to help run commands.
-		connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/poisedpms?useSSL=false", "otheruser",
-				"swordfish");
+		connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/poisedpms?useSSL=false", "username",
+				"password");
 		statement = connection.createStatement();
 
 	}
